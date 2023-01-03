@@ -1,0 +1,187 @@
+body {
+    font-family: Raleway, sans-serif;
+    max-width: 1400px;
+    margin: 0px 50px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5em;
+
+}
+
+header img {
+    max-width: 4em;
+}
+
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 2em 3em;
+}
+
+header a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+h1 {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 0px;
+    font-weight: 600;
+}
+
+.champ-recherche {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.titre-recherche p {
+    margin-bottom: 20px;
+}
+
+.fa-location-dot {
+    background-color: #D9D9D9;
+    padding: 15px 20px;
+    border-radius: 15px 0 0 15px;
+    font-size: 1.2em;
+}
+
+.champ-recherche input {
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 15px;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+.champ-recherche button {
+    font-family: Raleway, sans-serif;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: 0px;
+    padding: 0px 15px;
+    border-radius: 0 15px 15px 0;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.boutons-filtres {
+    display: flex;
+    gap: 3em
+}
+
+.boutons-filtres a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.1em;
+    border: 2px solid #D9D9D9;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.boutons-filtres a:hover {
+    background-color: #DEEBFF;
+}
+
+.boutons-filtres a i {
+    color: #0065FC;
+    font-size: 1.1em;
+    padding-right: 2px;
+}
+
+.logements-dispo {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    
+}
+
+.logements-dispo i {
+    color: #0065FC;
+    border: 1px solid #D9D9D9;
+    padding: 6px 10px;
+    border-radius: 1000px;
+    font-size: 0.8em;
+}
+
+.logements-dispo p {
+    border-left: 1em;
+}
+
+#hebergements {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+#hebergements img {
+    border-radius: 30px 30px 0 0;
+}
+
+#hebergements article,aside {
+    background-color: #D9D9D9;
+    padding: 0em 3em;
+    border-radius: 30px;
+}
+
+.resultats-hebergements {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-hebergement {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.cards-hebergement div {
+    flex: 25%;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid white;
+}
+
+.populaires {
+    flex: 0.3;
+}
+
+.resultats-hebergements img {
+    width: 100%;
+}
+
+.populaires img {
+    width: 100%;
+}
+
+h4 {
+    margin: 0px;
+}
