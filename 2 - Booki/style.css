@@ -79,7 +79,7 @@ p {
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 800;
 }
 
@@ -119,7 +119,7 @@ h2 {
     display: flex;
     gap: 1em;
     align-items: center;
-    
+    margin-bottom: 2em;
 }
 
 .logements-dispo i {
@@ -140,14 +140,26 @@ h2 {
     gap: 3em;
 }
 
-#hebergements img {
-    border-radius: 30px 30px 0 0;
-}
-
 #hebergements article,aside {
     background-color: #D9D9D9;
-    padding: 0em 3em;
+    padding: 2em;
     border-radius: 30px;
+}
+
+.description-herbergement {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.7em;
+    gap: 0.5em;
+}
+
+.description-herbergement p {
+    font-size: 0.9em;
+}
+
+h4 {
+    font-weight: 800;
+    margin-bottom: 1em;
 }
 
 .resultats-hebergements {
@@ -156,23 +168,57 @@ h2 {
     flex-direction: column;
 }
 
-.cards-hebergement {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3em;
+.resultats-hebergements img {
+    border-radius: 20px 20px 0 0;
+    max-height: 6em;
+    object-fit: cover;
 }
 
-.cards-hebergement div {
-    flex: 25%;
-    background-color: white;
-    border-radius: 30px;
-    border: 5px solid white;
-}
 
 .populaires {
     flex: 0.3;
 }
+
+.cards-hebergement {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.cards-hebergement > div {
+    box-shadow: 3px 3px 10px rgb(165, 165, 165);
+    flex: 0 1 calc(33% - 2em);
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+
+
+.cards-populaires {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+
+
+.cards-populaires div {
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid white;
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
 
 .resultats-hebergements img {
     width: 100%;
