@@ -202,7 +202,7 @@ h4 {
 }
 
 .cards-hebergement > div {
-  box-shadow: 3px 3px 10px rgb(165, 165, 165);
+  box-shadow: 3px 3px 10px rgb(180, 180, 180);
   flex: 0 1 calc(33% - 2em);
   background-color: white;
   border-radius: 20px;
@@ -218,7 +218,7 @@ h4 {
 }
 
 .cards-populaires > div {
-  box-shadow: 3px 3px 10px rgb(165, 165, 165);
+  box-shadow: 3px 3px 10px rgb(180, 180, 180);
   flex: 0 1 calc(33% - 2em);
   background-color: white;
   border-radius: 20px;
@@ -277,7 +277,7 @@ h4 {
 }
 
 .resultats-activites > div {
-  box-shadow: 3px 3px 10px rgb(165, 165, 165);
+  box-shadow: 3px 3px 10px rgb(204, 204, 204);
   border-radius: 20px;
   flex: 0 1 calc(25% - 2.3em);
 }
@@ -316,4 +316,63 @@ footer ul {
 
 footer ul li {
   padding: 0.4em 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .filtres {
+    gap: 1em;
+  }
+  
+  .boutons-filtres {
+    display: flex;
+    gap: 1.1em;
+  }
+
+  #hebergements {
+    flex-direction: column;
+  }
+
+  .cards-populaires {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .cards-populaires > div {
+    flex: 0 1 30%;
+  }
+
+  .cards-populaires img {
+    max-width: 5em;
+  }
+
+  .cards-populaires > * > .description-herbergement {
+    padding: 0.5em 1em 0.5em 1em;
+  }
+
+  .resultats-activites img {
+    max-height: 13em;
+    min-height: 13em;
+  }
+
+  .resultats-activites > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* la lutte pour centrer le texte verticalement !!!  */
+
+  .resultats-activites h4 {
+    padding: 0.3em 1em 0.3em 1em;
+    margin: auto 0;
+  }
+
+  footer {
+    gap: 5em;
+    margin-top: 4em;
+  }
+
+  #activites > h2 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
 }
