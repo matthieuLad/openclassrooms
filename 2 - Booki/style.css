@@ -77,6 +77,10 @@ p {
   border-radius: 0 15px 15px 0;
 }
 
+.bouton-loupe {
+  display: none;
+}
+
 h2 {
   font-size: 1.3em;
   font-weight: 800;
@@ -322,7 +326,7 @@ footer ul li {
   .filtres {
     gap: 1em;
   }
-  
+
   .boutons-filtres {
     display: flex;
     gap: 1.1em;
@@ -359,7 +363,7 @@ footer ul li {
     flex-direction: column;
   }
 
-/* la lutte pour centrer le texte verticalement !!!  */
+  /* la lutte pour centrer le texte verticalement !!!  */
 
   .resultats-activites h4 {
     padding: 0.3em 1em 0.3em 1em;
@@ -386,23 +390,67 @@ footer ul li {
     flex-direction: column;
     margin-top: 2em;
     height: 8em;
-
+    flex-wrap: nowrap;
+    margin-bottom: 6em;
   }
 
   header img {
     max-width: 7em;
   }
 
-  header a {
-    font-size: 1.7em;
-    padding: 0;
-
-  }
-
   header nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+  }
 
+  header a {
+    display: inline-flex;
+    font-size: 1.7em;
+    padding: 0 0 1em 0;
+    width: 50%;
+    justify-content: center;
+    border-top: 0px;
+    border-bottom: 5px solid #d9d9d9;
+    margin-top: 3em;
+  }
+
+  header a:hover {
+    border-top: 0;
+    border-bottom: 5px solid #0065fc;
+  }
+
+  main {
+    padding: 0 2.3em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .titre-recherche p {
+    font-size: 1.78em;
+    margin-bottom: 2em;
+  }
+
+  .champ-recherche {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    height: 3em;
+  }
+
+  .bouton-loupe {
+    display: inline-block;
+    height: 3em;
+  }
+
+  .bouton-rechercher {
+    display: none;
+  }
+
+  .champ-recherche input {
+    height: auto;
   }
 }
