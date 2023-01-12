@@ -165,6 +165,12 @@ aside {
 h4 {
   font-weight: 800;
   margin-bottom: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
 }
 
 .resultats-hebergements {
@@ -448,9 +454,9 @@ footer ul li {
   }
 
   .champ-recherche {
-    flex-wrap: wrap;
     align-content: stretch;
     margin-bottom: 5em;
+    width: 100%;
   }
 
   .champ-recherche > i {
@@ -459,6 +465,7 @@ footer ul li {
     width: 2.75em;
     align-items: center;
     justify-content: center;
+    flex: none;
   }
 
   .fa-location-dot {
@@ -469,12 +476,11 @@ footer ul li {
 
   .champ-recherche > form {
     display: flex;
-    align-content: stretch;
-    flex: 1 0;
+    flex: 1;
   }
 
   .champ-recherche input {
-    flex: 1 0;
+    flex: 1;
     font-size: 2em;
     padding: 20px;
   }
@@ -485,6 +491,7 @@ footer ul li {
     justify-content: center;
     height: 5em;
     width: 5em;
+    flex: none;
   }
 
   .champ-recherche button {
@@ -502,6 +509,7 @@ footer ul li {
   .filtres {
     flex-direction: column;
     margin-bottom: 5em;
+
   }
 
   .filtres > h3 {
@@ -513,10 +521,11 @@ footer ul li {
   .boutons-filtres {
     flex-wrap: wrap;
     gap: 2em;
+    justify-content: space-between;
   }
 
   .boutons-filtres > a {
-    width: 40%;
+    flex: 1 0 40%;
     height: 3em;
     border-radius: 50px;
     font-size: 1.3em;
