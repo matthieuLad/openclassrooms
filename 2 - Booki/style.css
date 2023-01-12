@@ -165,12 +165,11 @@ aside {
 h4 {
   font-weight: 800;
   margin-bottom: 1em;
-  overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-          line-clamp: 3; 
-  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.3em;
+  line-height: 1.1em;
 }
 
 .resultats-hebergements {
@@ -509,7 +508,6 @@ footer ul li {
   .filtres {
     flex-direction: column;
     margin-bottom: 5em;
-
   }
 
   .filtres > h3 {
