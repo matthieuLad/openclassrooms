@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez mon portfolio de développeur full stack passionné, mettant en œuvre des projets innovants et des expériences interactives. Explorez mes compétences en développement front-end, back-end et mes réalisations dans le domaine du web moderne.">
+    <title>Matthieu Ladouce - Développeur web</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./modules/modal.js" defer></script>
+    <script type="module" src="./modules/hidden-email.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="introduction">
+        <div class="intro">
+          <img
+            class="avatar"
+            src="./images/visage.svg"
+            alt="avatar de Matthieu"
+          />
+          <div class="intro-txt">
+            <h1>
+              Bonjour, je suis
+              <div class="highlight">Matthieu Ladouce</div>
+            </h1>
+            <p class="chapeau">
+              Je suis un
+              <span class="highlight-black">développeur full stack</span> basé à
+              Tourcoing, dans le Nord.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="lets-work">
+        <div class="lets-work-intro">
+          <div class="title">
+            <h2>
+              Travaillons ensemble&nbsp;<span class="highlight-bold">!</span>
+            </h2>
+            <img src="./images/golden-line.png" alt="ligne dorée" />
+          </div>
+          <p class="chapeau">
+            Après une carrière dans le marketing et la gestion de projet, j'ai
+            décidé de me réorienter vers une ancienne passion&nbsp;: le
+            développement.
+          </p>
+          <!-- <p class="more">En savoir plus sur mon approche ></p> -->
+        </div>
+        <div class="skills-table">
+          <div class="skill">
+            <img src="./images/books.svg" alt="livres" />
+            <div class="skill-txt">
+              <h3>Soif d'apprendre<span class="highlight-bold">.</span></h3>
+              <p>
+                Les outils et pratiques du développement sont en perpétuelle
+                évolution.<br />
+                J'aime l'ingéniosité et découvrir ce que les humains inventent.
+              </p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/loupe.svg" alt="loupe et oeil" />
+            <div class="skill-txt">
+              <h3>Sens du détail<span class="highlight-bold">.</span></h3>
+              <p>
+                J'aime que les choses soient bien faites, et je mets toute mon
+                application dans l'obtention d'un résultat qui soit
+                satisfaisant.
+              </p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="./images/checklist.svg" alt="checklist" />
+            <div class="skill-txt">
+              <h3>Rigueur<span class="highlight-bold">.</span></h3>
+              <p>
+                Je mets un point d'honneur à ce que mon travail puisse
+                s'intégrer au mieux à celui de mes collègues. Fournir un travail
+                propre, optimisé et maintenable est pour moi une priorité.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="technos">
+        <div class="technologies">
+          <div class="title">
+            <h2>Technologies</h2>
+            <img src="./images/golden-line.png" alt="ligne dorée" />
+          </div>
+          <div class="technos-logos">
+            <img src="./images/html-five.svg" alt="html5" />
+            <img src="./images/css3.svg" alt="CSS3" />
+            <img src="./images/sass.svg" alt="Sass" />
+            <img src="./images/javascript.svg" alt="Javascript" />
+            <img src="./images/react.svg" alt="React" />
+            <img src="./images/Java_Logo.svg" alt="Java" />
+            <img src="./images/nodedotjs.svg" alt="Node.js" />
+            <img src="./images/express.svg" alt="Express" />
+            <img src="./images/mongodb.svg" alt="MongoDB" />
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="projects-container">
+          <div class="title">
+            <h2>Projets</h2>
+            <img src="./images/golden-line.png" alt="ligne dorée" />
+          </div>
+          <div class="projects-table">
+            <a class="project" id="js-modal1" href="">
+              <img
+                src="./images/capture-grimoire.webp"
+                alt="capture du site Mon vieux grimoire"
+              />
+              <div class="project-overlay">
+                <div class="hover-title">Site de notation de livres</div>
+              </div>
+            </a>
+            <a class="project" id="js-modal2" href="">
+              <img
+                src="./images/capture-kasa.webp"
+                alt="capture du site Kasa"
+              />
+              <div class="project-overlay">
+                <div class="hover-title">Clone d'Airbnb</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logos">
+        <a id="contact" href=""><img src="./images/email.svg" alt="email" /></a>
+        <a href="https://github.com/matthieuLad" target="_blank"
+          ><img src="./images/github.svg" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/matthieu-ladouce-4b9a5880/"
+          target="_blank"
+          ><img src="./images/linkedin.svg" alt="linkedin"
+        /></a>
+      </div>
+    </footer>
+    <aside id="modal1" class="modal">
+      <div class="modal-wrapper js-modal-stop">
+        <div class="modal-header">
+          <a href=""
+            ><img src="./images/clear.svg" class="modal-close" alt=""
+          /></a>
+        </div>
+        <div class="modal-content">
+          <video playsinline autoplay muted loop>
+            <source src="./videos/grimoire-anim.mp4" type="video/mp4" />
+          </video>
+          <div class="modal-txt">
+            <h4>Mon Vieux Grimoire</h4>
+            <h5>2023 | Back-end</h5>
+            <h5>Challenges</h5>
+            <p>
+              Projet d'études OpenClassrooms.<br />Les utilisateurs doivent être
+              enregistrés pour pouvoir poster, éditer et supprimer de nouveaux
+              livres et les évaluer. Les notes et moyennes doivent être mis à
+              jour dynamiquement.<br />
+              Le site doit respecter les directives du Green Code.
+            </p>
+            <h5>Solutions</h5>
+            <ul>
+              <li>Base de données MongoDB</li>
+              <li>
+                Identification JWT, avec stockage en bd des mots de passe
+                cryptés
+              </li>
+              <li>Gestion des permissions</li>
+              <li>Système de notation avec moyenne mise à jour à la volée</li>
+              <li>
+                Green code&nbsp;: optimisation des images uploadées à la volée
+                (compression en webp grâce à Sharp)
+              </li>
+            </ul>
+            <a
+              href="https://github.com/TurboTruite/7---Vieux-grimoire"
+              target="_blank"
+              >Voir le code sur Github ></a
+            >
+            <div class="modal-tech-logos">
+              <img src="./images/react.svg" alt="React" />
+              <img src="./images/nodedotjs.svg" alt="Node.js" />
+              <img src="./images/express.svg" alt="Express" />
+              <img src="./images/mongodb.svg" alt="MongoDB" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside id="modal2" class="modal">
+      <div class="modal-wrapper js-modal-stop">
+        <div class="modal-header">
+          <a href=""
+            ><img src="./images/clear.svg" class="modal-close" alt=""
+          /></a>
+        </div>
+        <div class="modal-content">
+          <video playsinline autoplay muted loop>
+            <source src="./videos/KASA-anim.mp4" type="video/mp4" />
+          </video>
+          <div class="modal-txt">
+            <h4>Kasa</h4>
+            <h5>2023 | Front-end</h5>
+            <h5>Challenges</h5>
+            <p>
+              Projet d'études OpenClassrooms.<br />Le site devait être codé en
+              React en utilisant au maxium la logique des modules, utiliser des
+              animations modernes ainsi qu'être totalement dynamique et
+              responsive.
+            </p>
+            <h5>Solutions</h5>
+            <ul>
+              <li>Routage effectué avec React-router</li>
+              <li>Création de composants réutilisables JSX</li>
+              <li>Utilisation de SASS</li>
+              <li>Animations CSS</li>
+              <li>
+                Génération dynamique des pages "produit" à partir d'un fichier
+                JSON
+              </li>
+            </ul>
+            <a href="https://github.com/TurboTruite/kasa" target="_blank"
+              >Voir le code sur Github ></a
+            >
+            <div class="modal-tech-logos">
+              <img src="./images/css3.svg" alt="CSS3" />
+              <img src="./images/sass.svg" alt="Sass" />
+              <img src="./images/react.svg" alt="React" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>

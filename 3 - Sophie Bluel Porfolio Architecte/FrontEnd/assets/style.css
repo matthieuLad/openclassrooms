@@ -1,0 +1,692 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #fffef8;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** end reset css**/
+body {
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 150px 0;
+}
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
+}
+
+h1 > span {
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+  margin-top: 5em;
+}
+
+input {
+  font-family: "Work Sans";
+  padding: 0em 1em;
+}
+
+.mode-edition-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.mode-edition-header button {
+  font-family: "Work Sans";
+  color: black;
+  background-color: white;
+  text-align: center;
+  border-radius: 60px;
+  padding: 0.5em 1.5em;
+  font-weight: bold;
+  border: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+li:hover {
+  color: #b1663c;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover {
+  color: #b1663c;
+}
+
+.login {
+  display: block;
+}
+
+.logout {
+  display: none;
+}
+
+#introduction {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#introduction figure {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+#picture-modification {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 4em;
+  text-decoration: none;
+  color: #000000;
+}
+
+#introduction img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+#introduction article {
+  flex: 1;
+}
+#introduction h2 {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+#introduction p {
+  margin-bottom: 0.5em;
+}
+
+.titre-projets {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2em;
+}
+
+.titre-projets h2 {
+  flex: 0 1 auto;
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+}
+
+#works-modification {
+  flex: 0 1 auto;
+  margin-left: auto;
+  width: 450px;
+  display: flex;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+#contact {
+  width: 50%;
+  margin: auto;
+}
+#contact > * {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 20px;
+}
+#contact form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+  margin: 2em 0 1em 0;
+  font-weight: 500;
+}
+#contact textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  font-family: "Work Sans";
+  padding: 1em;
+}
+
+#login {
+  width: 40%;
+  margin: 0em auto 20em auto;
+}
+#login > * {
+  text-align: center;
+}
+#login h2 {
+  margin-bottom: 20px;
+}
+#login form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#login input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#login label {
+  margin: 2em 0 1em 0;
+}
+#login textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#login a {
+  font-weight: 600;
+  display: block;
+}
+
+.login-error-msg {
+  color: red;
+  margin-bottom: 2rem;
+  display: none;
+}
+
+input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+
+footer {
+  background-color: white;
+  border: 2em solid white;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0em;
+}
+
+.boutons-filtres {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+
+.boutons-filtres > label {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #1d6154;
+  border: 2px solid #1d6154;
+  padding: 0.5em 1em;
+  border-radius: 10em;
+}
+
+.boutons-filtres > input:checked + label {
+  color: white;
+  background-color: #1d6154;
+}
+
+.boutons-filtres > input {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-wrapper {
+  background: white;
+  width: 630px;
+  height: 731px;
+  max-width: calc(100vw - 20%);
+  max-height: calc(100vh - 10%);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.modal-header {
+  width: calc(100% - 4em);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 1.5em;
+}
+
+.modal-content1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-wrapper h3 {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.modal-gallery {
+  display: flex;
+  gap: 0.7em;
+  flex-wrap: wrap;
+  width: 70%;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.modal-gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-basis: calc(20.3% - 0.7em);
+  position: relative;
+}
+
+.modal-gallery figure img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.image-overlay {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0.4em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  gap: 0.2em;
+}
+
+.image-overlay button {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  height: 20px;
+  font-size: 70%;
+}
+
+.arrows {
+  display: none;
+}
+
+.add-picture-button {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  border: 0;
+  margin: 2em auto;
+  text-align: center;
+  border-radius: 60px;
+  padding: 1em 3em;
+  margin-top: 3em;
+}
+
+.supprimer-gallerie {
+  text-decoration: none;
+  color: #d65353;
+}
+
+.modal-content2 {
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture-upload-box {
+  width: 66%;
+  height: 170px;
+  background: #e8f1f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.upload-interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-image {
+  font-size: 4em;
+  font-weight: 100;
+  color: #b9c5cc;
+  margin-top: 0.4em;
+  margin-bottom: 0.3em;
+}
+
+.picture-upload-button {
+  font-family: "Work Sans";
+  font-weight: 500;
+  color: #306685;
+  background-color: #cbd6dc;
+  border: 0;
+  margin: 0 0 0.5em 0 !important;
+  border-radius: 60px;
+  padding: 1em 3em;
+  align-self: center !important;
+}
+
+.picture-upload-box p {
+  font-size: 0.7rem;
+}
+
+.thumbnail {
+  display: none;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal-content2 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66%;
+}
+
+.input-fields {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.modal-content2 input {
+  height: 50px;
+  font-weight: 400;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  width: calc(100% - 2em);
+}
+
+.modal-content2 select {
+  height: 50px;
+  width: 100%;
+  font-weight: 400;
+  padding: 0em 1.3em;
+  font-family: "Work Sans";
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.3.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons  Inc. --%3E%3Cpath d='M169.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 274.7 54.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 1.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.modal-content2 label {
+  margin: 2em 0 1em 0;
+  font-weight: 500;
+  align-self: baseline;
+}
+
+[class*="validate-button"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  border: 0;
+  width: 237px;
+  text-align: center;
+  border-radius: 60px;
+  padding: 0.7em;
+  margin-top: 2em;
+}
+
+.validate-button-ok {
+  display: none;
+}
+
+.validate-button-notOk {
+  background-color: #a7a7a7;
+  display: block;
+}
+
+.validate-error-msg {
+  color: red;
+  padding: 1em;
+  display: none;
+}
+
+#file {
+  display: none;
+}
+
+.modal-header a {
+  text-decoration: none;
+}
+
+.modal-header a i {
+  font-size: 1.5em;
+  color: black;
+}
+
+.fa-arrow-left {
+  display: none;
+}

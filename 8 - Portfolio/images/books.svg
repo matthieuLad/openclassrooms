@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 576 512" style="enable-background:new 0 0 576 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E1E4E3;}
+	.st1{fill:#E29C2D;}
+</style>
+<g id="icomoon-ignore">
+</g>
+<path class="st0" d="M112,64H16C7.2,64,0,71.2,0,80v352c0,8.8,7.2,16,16,16h96c8.8,0,16-7.2,16-16V80C128,71.2,120.8,64,112,64z
+	 M96,160H32v-32h64V160z"/>
+<path class="st1" d="M272,64h-96c-8.8,0-16,7.2-16,16v352c0,8.8,7.2,16,16,16h96c8.8,0,16-7.2,16-16V80C288,71.2,280.8,64,272,64z
+	 M256,160h-64v-32h64V160z"/>
+<path class="st0" d="M382.5,88.7l-85.7,43.2c-7.9,4-11,13.6-7.1,21.5l144,285.8c4,7.9,13.6,11,21.5,7.1l85.7-43.2
+	c7.9-4,11-13.6,7.1-21.5L404,95.8C400.1,88,390.4,84.8,382.5,88.7L382.5,88.7z"/>
+</svg>
